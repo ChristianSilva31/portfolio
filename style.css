@@ -5,13 +5,13 @@
     font-family: 'Inter', sans-serif;
 }
 
-body {
+body 
+{
     background: #000000;
     color: white;
 }
-
-/* Canvas partículas */
-#particles-js {
+#particles-js 
+{
     position: fixed;
     width: 100%;
     height: 100%;
@@ -19,22 +19,24 @@ body {
     top: 0;
     left: 0;
     background: transparent;
-    pointer-events: auto; /* necessário para mouse hover funcionar */
+    pointer-events: auto;
 }
 
-/* Conteúdo */
-#content {
+
+#content 
+{
     position: relative;
     z-index: 1;
-    pointer-events: none; /* conteúdo não bloqueia partículas */
+    pointer-events: none;
 }
 
-#content a, #content button {
+#content a, #content button 
+{
     pointer-events: auto; /* interativos ainda clicáveis */
 }
 
-/* Navbar */
-.navbar {
+.navbar 
+{
     position: fixed;
     top: 0;
     left: 0;
@@ -43,21 +45,24 @@ body {
     padding: 20px 10%;
 }
 
-.navbar ul {
+.navbar ul 
+{
     display: flex;
     justify-content: flex-end;
     list-style: none;
-    gap: 30px;
+    gap: 40px;
 }
 
-.navbar a {
+.navbar a
+{
     text-decoration: none;
     color: #fff;
     font-weight: 600;
 }
 
 /* Hero Section */
-#hero {
+#hero 
+{
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -67,62 +72,46 @@ body {
     text-align: center;
 }
 
-#hero h1 {
+#hero h1 
+{
     font-size: 6rem;
 }
 
-#hero h3 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #aaa;
-    margin: 10px 0 0 0;
-}
-
-.btn {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background: #00bcd4;
-    color: #fff;
-    border-radius: 8px;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background: transparent;
-    color: #00bcd4;
-}
-
-/* Seções e grids */
-section {
+section 
+{
     padding: 100px 10%;
 }
 
-.skills-grid, .projects-grid {
+.skills-grid, .projects-grid 
+{
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     margin-top: 30px;
 }
 
-.skills-grid div, .card {
+.skills-grid div, .card 
+{
     background: #1a1a1a;
     padding: 20px;
     border-radius: 10px;
     transition: transform 0.3s;
 }
 
-.skills-grid div:hover, .card:hover {
+.skills-grid div:hover, .card:hover 
+{
     transform: translateY(-5px);
 }
 
-.card img {
+.card img 
+{
     width: 100%;
     border-radius: 10px;
     margin-bottom: 10px;
 }
 
-footer {
+footer 
+{
     padding: 20px;
     text-align: center;
     background: #111;
