@@ -1,182 +1,129 @@
-
-* 
-{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
 }
 
-body 
-{
-  margin: 0;
-  padding: 0;
-  background: #000000;
-  color: white; 
-  font-family: Arial, sans-serif;
+body {
+    background: #000000;
+    color: white;
 }
 
-/* Seções */
-section 
-{
-  padding: 180px 10%;
+/* Canvas partículas */
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    background: transparent;
+    pointer-events: auto; /* necessário para mouse hover funcionar */
 }
 
-h1 
-{
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
-  font-size: 6rem;
-  font-weight: normal;
-  color: #fff;
-  margin: 0;
+/* Conteúdo */
+#content {
+    position: relative;
+    z-index: 1;
+    pointer-events: none; /* conteúdo não bloqueia partículas */
 }
 
-
-h2
-{
-  margin: 300px;
-}
-
-#hero 
-{
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-left: 10%;
-  text-align: center;
-}
-
-#hero h1
-{
-  font-size: 3rem;
-  font-weight: 800;
-}
-
-#hero h2 
-{
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #aaa;
-}
-
-.btn 
-{
-  margin-top: 20px;
-  padding: 10px 20px;
-  background: #00bcd4;
-  color: #fff;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.btn:hover 
-{
-  background: transparent;
-}
-
-/* Grids */
-.skills-grid, .projects-grid 
-{
-  display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  margin-top: 30px;
-}
-
-.skills-grid div 
-{
-  background: #1a1a1a;
-  padding: 20px;
-  border-radius: 10px;
-  transition: transform 0.3s;
-}
-
-.skills-grid div:hover 
-{
-  transform: translateY(-5px);
-}
-
-.card 
-{
-  background: #1a1a1a;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-.card img 
-{
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 10px;
-}
-
-.socials a 
-{
-  margin: 0 10px;
-  color: #00bcd4;
-  font-size: 1.5rem;
-  transition: 0.3s;
-}
-
-.socials a:hover 
-{
-  color: #fff;
-}
-
-footer 
-{
-  padding: 20px;
-  text-align: center;
-  background: #111;
-  font-size: 0.9rem;
+#content a, #content button {
+    pointer-events: auto; /* interativos ainda clicáveis */
 }
 
 /* Navbar */
-.navbar 
-{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: transparent;
-  padding: 20px 10%;
-  z-index: 10;
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    padding: 20px 10%;
 }
 
-.navbar ul 
-{
-  display: flex;
-  justify-content: flex-end;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  gap: 30px;
+.navbar ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    gap: 30px;
 }
 
-.navbar a 
-{
-  text-decoration: none;
-  color: #fff;
-  font-weight: 600;
-  transition: color 0.3s;
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
 }
 
-.navbar a:hover 
-{
-  color: #00bcd4;
+/* Hero Section */
+#hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 80px;
+    text-align: center;
 }
 
-/* Fundo partículas */
-#particles-js 
-{
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  background: transparent;
+#hero h1 {
+    font-size: 6rem;
+}
+
+#hero h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #aaa;
+    margin: 10px 0 0 0;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #00bcd4;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: transparent;
+    color: #00bcd4;
+}
+
+/* Seções e grids */
+section {
+    padding: 100px 10%;
+}
+
+.skills-grid, .projects-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    margin-top: 30px;
+}
+
+.skills-grid div, .card {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.skills-grid div:hover, .card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #111;
 }

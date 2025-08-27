@@ -1,95 +1,59 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Christian Silva | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Particles Interativo</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Canvas Partículas -->
+    <div id="particles-js"></div>
 
-  <!-- PARTICLE BACKGROUND -->
-  <div id="particles-js"></div>
+    <!-- Conteúdo -->
+    <div id="content">
+        <nav class="navbar">
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </nav>
 
-  <!-- NAVBAR -->
-  <nav class="navbar">
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+        <section id="hero">
+            <h1>Christian Santos</h1>
+            <h3>Desenvolvedor Firmware e Software</h3>
+            <a href="#projects" class="btn">Ver Projetos</a>
+        </section>
 
-  <!-- HERO -->
-  <section id="hero">
-    <h1>Christian Silva</h1>
-    <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-e0e7w2">
-      <h3 class="MuiTypography-root MuiTypography-subtitle1 css-penf9g">a full stack software engineer</h3>
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div>C</div>
+                <div>C#</div>
+                <div>STM32</div>
+                <div>WPF</div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projetos</h2>
+            <div class="projects-grid">
+                <div class="card">
+                    <img src="https://via.placeholder.com/150" alt="Projeto 1">
+                    <p>Projeto 1</p>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/150" alt="Projeto 2">
+                    <p>Projeto 2</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>© 2025 Christian Santos</footer>
     </div>
-    <a href="#projects" class="btn">Show Projects</a>
-  </section>
 
-  <!-- ABOUT -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I'm experienced in firmware development with STM32, Arduino, ESP and desktop applications. 
-      Passionate about car customization and technology.
-    </p>
-  </section>
-
-  <!-- SKILLS -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills-grid">
-      <div><i class="fa-solid fa-microchip"></i><span> STM32</span></div>
-      <div><i class="fa-solid fa-code"></i><span> C / C#</span></div>
-      <div><i class="fa-brands fa-windows"></i><span> .NET / WPF</span></div>
-      <div><i class="fa-brands fa-git-alt"></i><span> Git / GitHub</span></div>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="projects-grid">
-      <div class="card">
-        <img src="assets/img/project1.png" alt="Projeto 1">
-        <h3>Interface Haptics</h3>
-        <p>Controle de motores hápticos via STM32 + USB HID.</p>
-        <a href="#">GitHub</a>
-      </div>
-      <div class="card">
-        <img src="assets/img/project2.png" alt="Projeto 2">
-        <h3>Simulador de Shifter</h3>
-        <p>Firmware + software para simulação automotiva.</p>
-        <a href="#">GitHub</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Get in touch with me:</p>
-    <div class="socials">
-      <a href="https://github.com/ChristianSilva31" target="_blank"><i class="fa-brands fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/christian-silva-dos-santos-a70418236/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-      <a href="mailto:christiansilva.dev@outlook.com"><i class="fa-solid fa-envelope"></i></a>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2025 Christian Santos</p>
-  </footer>
-
-  <!-- PARTICLES.JS -->
-  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
-  <script src="particles-config.js"></script>
-  <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
