@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Christian Silva | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+#starfield {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  pointer-events: none; /* permite clicar nos elementos acima */
+}
+
+
+  <!-- HERO -->
+  <section id="hero">
+    <h1>Christian Silva</h1>
+    <h2>Embedded Systems & FullStack Developer</h2>
+    <p>Coding Firmware Solutions in C and FullStack Software in C#, JS, React</p>
+    <a href="#projects" class="btn">Show Projects</a>
+  </section>
+
+  <!-- About Me -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm experienced in firmware development with STM32, Arduino, ESP and desktop applications. 
+      Passionate about car customization and technology.
+    </p>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div><i class="fa-solid fa-microchip"></i><span> STM32</span></div>
+      <div><i class="fa-solid fa-code"></i><span> C / C#</span></div>
+      <div><i class="fa-brands fa-windows"></i><span> .NET / WPF</span></div>
+      <div><i class="fa-brands fa-git-alt"></i><span> Git / GitHub</span></div>
+    </div>
+  </section>
+
+  <!-- PROJETOS -->
+  <section id="projects">
+    <h2>Projetos</h2>
+    <div class="projects-grid">
+      <div class="card">
+        <img src="assets/img/project1.png" alt="Projeto 1">
+        <h3>Interface Haptics</h3>
+        <p>Controle de motores hápticos via STM32 + USB HID.</p>
+        <a href="#">GitHub</a>
+      </div>
+      <div class="card">
+        <img src="assets/img/project2.png" alt="Projeto 2">
+        <h3>Simulador de Shifter</h3>
+        <p>Firmware + software para simulação automotiva.</p>
+        <a href="#">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contact">
+    <h2>Contato</h2>
+    <p>Entre em contato comigo:</p>
+    <div class="socials">
+      <a href="https://github.com/ChristianSilva31" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/christian-silva-dos-santos-a70418236/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="mailto:christiansilva.dev@outlook.com"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Christian Santos</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

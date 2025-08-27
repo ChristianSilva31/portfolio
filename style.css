@@ -1,0 +1,144 @@
+/* Estilo geral */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #0d0d0d;
+  color: #f2f2f2;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Seções */
+section {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+h1, h2 {
+  margin: 20px;
+}
+
+#hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+#hero h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #aaa;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #00bcd4;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #008c9e;
+}
+
+/* Grids */
+.skills-grid, .projects-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  margin-top: 30px;
+}
+
+.skills-grid div {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.skills-grid div:hover {
+  transform: translateY(-5px);
+}
+
+.card {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.socials a {
+  margin: 0 10px;
+  color: #00bcd4;
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+
+.socials a:hover {
+  color: #fff;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #111;
+  font-size: 0.9rem;
+}
+
+/* Fundo de estrelas */
+.stars {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: -1;
+}
+
+.stars::after {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(2px 2px at 20% 30%, white, transparent),
+              radial-gradient(1px 1px at 40% 70%, white, transparent),
+              radial-gradient(2px 2px at 90% 80%, white, transparent),
+              radial-gradient(1px 1px at 70% 20%, white, transparent),
+              radial-gradient(2px 2px at 10% 50%, white, transparent),
+              radial-gradient(1px 1px at 80% 40%, white, transparent);
+  background-repeat: repeat;
+  animation: moveStars 100s linear infinite;
+}
+
+#starfield {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  pointer-events: none; /* permite clicar nos elementos acima */
+}
+
+
+@keyframes moveStars {
+  from { transform: translateY(0); }
+  to   { transform: translateY(-100px); }
+}
