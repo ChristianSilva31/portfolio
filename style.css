@@ -1,5 +1,6 @@
-/* Estilo geral */
-* {
+
+* 
+{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -8,22 +9,32 @@
 
 body 
 {
-  background-color: #0d0d0d;
-  color: #f2f2f2;
-  line-height: 1.6;
-  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  background: #000000;
+  color: white; 
+  font-family: Arial, sans-serif;
 }
 
 /* Seções */
-section
- {
+section 
+{
   padding: 180px 10%;
-  text-align: center;
 }
 
-h1, h2 
+h1 
 {
-  margin: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
+  font-size: 6rem;
+  font-weight: normal;
+  color: #fff;
+  margin: 0;
+}
+
+
+h2
+{
+  margin: 300px;
 }
 
 #hero 
@@ -32,26 +43,26 @@ h1, h2
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   padding-left: 10%;
-  text-align: left;
+  text-align: center;
 }
 
 #hero h1
- {
+{
   font-size: 3rem;
   font-weight: 800;
 }
 
-#hero h2
- {
+#hero h2 
+{
   font-size: 1.5rem;
   font-weight: 600;
   color: #aaa;
 }
 
-.btn
- {
+.btn 
+{
   margin-top: 20px;
   padding: 10px 20px;
   background: #00bcd4;
@@ -61,14 +72,14 @@ h1, h2
   transition: 0.3s;
 }
 
-.btn:hover
- {
-  background: #008c9e;
+.btn:hover 
+{
+  background: transparent;
 }
 
 /* Grids */
-.skills-grid, .projects-grid
- {
+.skills-grid, .projects-grid 
+{
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -83,35 +94,35 @@ h1, h2
   transition: transform 0.3s;
 }
 
-.skills-grid div:hover
- {
+.skills-grid div:hover 
+{
   transform: translateY(-5px);
 }
 
-.card
- {
+.card 
+{
   background: #1a1a1a;
   padding: 20px;
   border-radius: 10px;
 }
 
-.card img
- {
+.card img 
+{
   width: 100%;
   border-radius: 10px;
   margin-bottom: 10px;
 }
 
-.socials a
- {
+.socials a 
+{
   margin: 0 10px;
   color: #00bcd4;
   font-size: 1.5rem;
   transition: 0.3s;
 }
 
-.socials a:hover
- {
+.socials a:hover 
+{
   color: #fff;
 }
 
@@ -123,30 +134,30 @@ footer
   font-size: 0.9rem;
 }
 
-.navbar
- {
-  position: fixed; 
-  text-align: center;     /* fixa no topo */
+/* Navbar */
+.navbar 
+{
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background: transparent; /* semi-transparente */
-  padding: 10px 10%;
-  z-index: 10;          /* garante que fique acima do resto */
+  background: transparent;
+  padding: 20px 10%;
+  z-index: 10;
 }
 
-.navbar ul
- {
+.navbar ul 
+{
   display: flex;
-  justify-content: center; /* alinha os itens à direita */
+  justify-content: flex-end;
   list-style: none;
   margin: 0;
   padding: 0;
-  gap: 30px;             /* espaço entre os links */
+  gap: 30px;
 }
 
-.navbar a
- {
+.navbar a 
+{
   text-decoration: none;
   color: #fff;
   font-weight: 600;
@@ -158,44 +169,14 @@ footer
   color: #00bcd4;
 }
 
-
-
-/* Fundo de estrelas */
-.stars
- {
+/* Fundo partículas */
+#particles-js 
+{
   position: fixed;
   width: 100%;
   height: 100%;
-  background: transparent;
   z-index: -1;
-}
-
-.stars::after 
-{
-  content: "";
-  position: absolute;
-  width: 200%;
-  height: 200%;
-  background: radial-gradient(2px 2px at 20% 30%, white, transparent),
-              radial-gradient(1px 1px at 40% 70%, white, transparent),
-              radial-gradient(2px 2px at 90% 80%, white, transparent),
-              radial-gradient(1px 1px at 70% 20%, white, transparent),
-              radial-gradient(2px 2px at 10% 50%, white, transparent),
-              radial-gradient(1px 1px at 80% 40%, white, transparent);
-  background-repeat: repeat;
-  animation: moveStars 100s linear infinite;
-}
-
-#starfield {
-  position: fixed;
   top: 0;
   left: 0;
-  z-index: -1;
-  pointer-events: none; /* permite clicar nos elementos acima */
-}
-
-
-@keyframes moveStars {
-  from { transform: translateY(0); }
-  to   { transform: translateY(-100px); }
+  background: transparent;
 }

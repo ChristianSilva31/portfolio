@@ -10,24 +10,29 @@
 </head>
 <body>
 
-#starfield {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  pointer-events: none; /* permite clicar nos elementos acima */
-}
+  <!-- PARTICLE BACKGROUND -->
+  <div id="particles-js"></div>
 
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
   <!-- HERO -->
   <section id="hero">
     <h1>Christian Silva</h1>
-    <h2>Embedded Systems & FullStack Developer</h2>
-    <p>Coding Firmware Solutions in C and FullStack Software in C#, JS, React</p>
+    <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-e0e7w2">
+      <h3 class="MuiTypography-root MuiTypography-subtitle1 css-penf9g">a full stack software engineer</h3>
+    </div>
     <a href="#projects" class="btn">Show Projects</a>
   </section>
 
-  <!-- About Me -->
+  <!-- ABOUT -->
   <section id="about">
     <h2>About Me</h2>
     <p>
@@ -47,9 +52,9 @@
     </div>
   </section>
 
-  <!-- PROJETOS -->
+  <!-- PROJECTS -->
   <section id="projects">
-    <h2>Projetos</h2>
+    <h2>Projects</h2>
     <div class="projects-grid">
       <div class="card">
         <img src="assets/img/project1.png" alt="Projeto 1">
@@ -66,10 +71,10 @@
     </div>
   </section>
 
-  <!-- CONTATO -->
+  <!-- CONTACT -->
   <section id="contact">
-    <h2>Contato</h2>
-    <p>Entre em contato comigo:</p>
+    <h2>Contact</h2>
+    <p>Get in touch with me:</p>
     <div class="socials">
       <a href="https://github.com/ChristianSilva31" target="_blank"><i class="fa-brands fa-github"></i></a>
       <a href="https://www.linkedin.com/in/christian-silva-dos-santos-a70418236/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
@@ -82,6 +87,9 @@
     <p>© 2025 Christian Santos</p>
   </footer>
 
+  <!-- PARTICLES.JS -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <script src="particles-config.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
