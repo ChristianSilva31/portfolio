@@ -6,7 +6,8 @@
   font-family: 'Inter', sans-serif;
 }
 
-body {
+body 
+{
   background-color: #0d0d0d;
   color: #f2f2f2;
   line-height: 1.6;
@@ -14,35 +15,43 @@ body {
 }
 
 /* Seções */
-section {
-  padding: 80px 10%;
+section
+ {
+  padding: 180px 10%;
   text-align: center;
 }
 
-h1, h2 {
-  margin: 20px;
+h1, h2 
+{
+  margin: 0px;
 }
 
-#hero {
+#hero 
+{
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  padding-left: 10%;
+  text-align: left;
 }
 
-#hero h1 {
+#hero h1
+ {
   font-size: 3rem;
   font-weight: 800;
 }
 
-#hero h2 {
+#hero h2
+ {
   font-size: 1.5rem;
   font-weight: 600;
   color: #aaa;
 }
 
-.btn {
+.btn
+ {
   margin-top: 20px;
   padding: 10px 20px;
   background: #00bcd4;
@@ -52,61 +61,108 @@ h1, h2 {
   transition: 0.3s;
 }
 
-.btn:hover {
+.btn:hover
+ {
   background: #008c9e;
 }
 
 /* Grids */
-.skills-grid, .projects-grid {
+.skills-grid, .projects-grid
+ {
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   margin-top: 30px;
 }
 
-.skills-grid div {
+.skills-grid div 
+{
   background: #1a1a1a;
   padding: 20px;
   border-radius: 10px;
   transition: transform 0.3s;
 }
 
-.skills-grid div:hover {
+.skills-grid div:hover
+ {
   transform: translateY(-5px);
 }
 
-.card {
+.card
+ {
   background: #1a1a1a;
   padding: 20px;
   border-radius: 10px;
 }
 
-.card img {
+.card img
+ {
   width: 100%;
   border-radius: 10px;
   margin-bottom: 10px;
 }
 
-.socials a {
+.socials a
+ {
   margin: 0 10px;
   color: #00bcd4;
   font-size: 1.5rem;
   transition: 0.3s;
 }
 
-.socials a:hover {
+.socials a:hover
+ {
   color: #fff;
 }
 
-footer {
+footer 
+{
   padding: 20px;
   text-align: center;
   background: #111;
   font-size: 0.9rem;
 }
 
+.navbar
+ {
+  position: fixed; 
+  text-align: center;     /* fixa no topo */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent; /* semi-transparente */
+  padding: 10px 10%;
+  z-index: 10;          /* garante que fique acima do resto */
+}
+
+.navbar ul
+ {
+  display: flex;
+  justify-content: center; /* alinha os itens à direita */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 30px;             /* espaço entre os links */
+}
+
+.navbar a
+ {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.navbar a:hover 
+{
+  color: #00bcd4;
+}
+
+
+
 /* Fundo de estrelas */
-.stars {
+.stars
+ {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -114,7 +170,8 @@ footer {
   z-index: -1;
 }
 
-.stars::after {
+.stars::after 
+{
   content: "";
   position: absolute;
   width: 200%;
