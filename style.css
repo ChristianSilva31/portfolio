@@ -32,7 +32,7 @@ body
 
 #content a, #content button 
 {
-    pointer-events: auto; /* interativos ainda clicáveis */
+    pointer-events: auto;
 }
 
 .navbar 
@@ -57,25 +57,34 @@ body
 {
     text-decoration: none;
     color: #fff;
-    font-weight: 600;
+    font-weight: 100;
 }
 
-/* Hero Section */
 #hero 
 {
-    height: 100vh;
+    height: 100vh; 
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    padding-top: 80px;
     text-align: center;
+    padding-top: 0;    
 }
 
 #hero h1 
 {
     font-size: 6rem;
+    margin-bottom: 20px; 
 }
+
+#hero h3 
+{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: whitesmoke;
+    margin-top: 20px;     
+}
+
 
 section 
 {
@@ -112,7 +121,48 @@ section
 
 footer 
 {
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     background: #111;
+}
+
+/* Tablets (1024px) */
+@media (max-width: 1024px) 
+{
+  #hero h1 
+  {
+    font-size: 4rem;
+  }
+
+  #hero h3 
+  {
+    font-size: 1.2rem;
+  }
+}
+
+/* cellphones (768px) */
+@media (max-width: 768px) 
+{
+  #hero h1 
+  {
+    font-size: 3rem;
+  }
+
+  #hero h3 
+  {
+    font-size: 1rem;
+  }
+}
+
+/* Cellphones (480px) */
+@media (max-width: 480px) 
+{
+  #hero h1 
+  {
+    font-size: 2.2rem;
+  }
+  #hero h3 
+  {
+    font-size: 0.9rem;
+  }
 }
